@@ -10,6 +10,7 @@ const assetUrls = [
 
 self.addEventListener('install', async event => {
   const cache = await caches.open(staticCacheName)
+  console.log(cache.addAll);
   await cache.addAll(assetUrls)
 })
 
@@ -37,6 +38,7 @@ self.addEventListener('fetch', event => {
 
 async function cacheFirst(request) {
   const cached = await caches.match(request)
+  console.log(cached);
   return cached || await fetch(request)
 }
 
@@ -48,6 +50,7 @@ async function networkFirst(request) {
     return response
   } catch (e) {
     const cached = await cache.match(request)
+    console.log(cached);
     return cached || null
   }
 }
