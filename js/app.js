@@ -1,5 +1,5 @@
-// document.addEventListener("deviceready", onDeviceReady, false);
-onDeviceReady();
+document.addEventListener("deviceready", onDeviceReady, false);
+
 function onDeviceReady() {
   async function start() {
     console.log(555, navigator);
