@@ -5,7 +5,7 @@
   "background_color": "#1a4f79",
   "display": "browser",
   "orientation": "portrait",
-  "start_url": "https://ezio17.github.io/service-workets/",
+  "start_url": ".",
   "icons": [
     {
       "src": "/icons/app-icon-96-96.png",
