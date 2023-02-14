@@ -9,7 +9,7 @@ function onDeviceReady() {
         const reg = await navigator.serviceWorker.register("sw.js", { scope: '/service-workets/' });
         console.log("Service worker register success", reg);
       } catch (e) {
-        console.log("Service worker register fail");
+        console.log("Service worker register fail", e);
       }
     }
 
