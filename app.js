@@ -6,7 +6,7 @@ function onDeviceReady() {
     if ("serviceWorker" in navigator) {
       try {
         console.log(1121111);
-        const reg = await navigator.serviceWorker.register("sw.js", { scope: '../' });
+        const reg = await navigator.serviceWorker.register("sw.js", { scope: '/service-workets/' });
         console.log("Service worker register success", reg);
       } catch (e) {
         console.log("Service worker register fail");
