@@ -5,7 +5,8 @@ function onDeviceReady() {
     console.log(555, navigator);
     if ("serviceWorker" in navigator) {
       try {
-        const reg = await navigator.serviceWorker.register("https://ezio17.github.io/service-workets/sw.js");
+        console.log(1121111);
+        const reg = await navigator.serviceWorker.register("sw.js", { scope: './' });
         console.log("Service worker register success", reg);
       } catch (e) {
         console.log("Service worker register fail");
