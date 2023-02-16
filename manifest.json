@@ -3,7 +3,7 @@
   "short_name": "VM PWA",
   "theme_color": "#3a1a86",
   "background_color": "#1a4f79",
-  "display": "browser",
+  "display": "fullscreen",
   "orientation": "portrait",
   "start_url": ".",
   "icons": [
